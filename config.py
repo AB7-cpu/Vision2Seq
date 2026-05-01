@@ -31,7 +31,7 @@ DROPOUT    = 0.5
 
 #    Training:
 BATCH_SIZE    = 64
-NUM_EPOCHS    = 20
+NUM_EPOCHS    = 15
 LEARNING_RATE = 4e-4
 CNN_LR        = 1e-5
 WEIGHT_DECAY  = 1e-5
@@ -40,7 +40,7 @@ NUM_WORKERS   = 4
 FINE_TUNE_CNN = True
 
 # Training Settings:
-SUBSET      = 1.0  # Percentage of the full 118k dataset.
+SUBSET      = 0.4  # Percentage of the full 118k dataset.
 
 
 SMOKE_TEST  = False # True: uses only the val2017 dataset just for initial testing.
