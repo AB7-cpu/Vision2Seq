@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+.venv/
+env/
+
+# Dataset (large files — download separately via MS-COCO scripts)
+data/coco/images/
+data/coco/annotations/
+data/vocabulary.pkl
+
+# Checkpoints (tracked separately or via DVC/wandb)
+checkpoints/
+
+# Training outputs
+results/
+wandb/
+
+# Jupyter / IDE
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
