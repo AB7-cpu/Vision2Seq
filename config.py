@@ -79,3 +79,23 @@ V2_RESUME_CHECKPOINT = "checkpoints/v2/best_model.pth"   # auto-resume from last
 #    V2 Paths:
 V2_CHECKPOINT_DIR = CHECKPOINT_DIR / "v2"
 WANDB_PROJECT_V2  = "image-captioning-v2"
+
+
+#    Model — V3 (CNN + Transformer Decoder):
+
+V3_ENCODER_DIM     = 2048   # ResNet-50 layer4 channels
+V3_D_MODEL         = 512    # Transformer model dimension  (8 heads × 64 per head)
+V3_N_HEADS         = 8      # Multi-head attention heads
+V3_N_LAYERS        = 3      # Transformer decoder layers
+V3_DIM_FEEDFORWARD = 2048   # FFN hidden size inside each decoder layer
+V3_DROPOUT         = 0.1    # Transformer dropout (lower than LSTM -- 0.1 is standard)
+
+#    V3 Training:
+V3_LEARNING_RATE     = 1e-4
+V3_CNN_LR            = 1e-5
+V3_NUM_EPOCHS        = 15
+V3_RESUME_CHECKPOINT = None
+
+#    V3 Paths:
+V3_CHECKPOINT_DIR = CHECKPOINT_DIR / "v3"
+WANDB_PROJECT_V3  = "image-captioning-v3"
