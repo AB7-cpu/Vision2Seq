@@ -57,3 +57,25 @@ LOG_INTERVAL  = 100
 SAVE_INTERVAL = 1
 USE_WANDB     = True
 WANDB_PROJECT = "image-captioning-v1"
+
+
+#    Model — V2 (CNN + Attention + LSTM):
+
+V2_ENCODER_DIM   = 2048   # ResNet-50 layer4 channels (spatial grid depth)
+V2_EMBED_DIM     = 256    # word embedding size
+V2_HIDDEN_DIM    = 512    # LSTM hidden size
+V2_ATTENTION_DIM = 512    # joint attention space size
+V2_DROPOUT       = 0.5
+
+#    Doubly-stochastic attention regularisation (Xu et al. 2015, eq. 14):
+V2_ALPHA_C = 1.0          # λ — set to 0 to disable
+
+#    V2 Training:
+V2_LEARNING_RATE     = 4e-4
+V2_CNN_LR            = 1e-5
+V2_NUM_EPOCHS        = 15
+V2_RESUME_CHECKPOINT = "checkpoints/v2/best_model.pth"   # auto-resume from last best. (None for fresh start)
+
+#    V2 Paths:
+V2_CHECKPOINT_DIR = CHECKPOINT_DIR / "v2"
+WANDB_PROJECT_V2  = "image-captioning-v2"
