@@ -285,7 +285,7 @@ Image Captioning/
 ### 1. Clone & Environment Setup
 
 ```bash
-git clone https://github.com/your-username/Vision2Seq-Image-Captioning.git
+git clone https://github.com/AB7-cpu/Vision2Seq-Image-Captioning.git
 cd Vision2Seq-Image-Captioning
 
 # Create dedicated virtual environment
