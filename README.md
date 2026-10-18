@@ -161,9 +161,9 @@ To validate real-world performance, all three trained models were tested across 
 | Model V1 (Show & Tell) | Model V2 (Spatial Attention) | Model V3 (Transformer Decoder) |
 | :---: | :---: | :---: |
 | ![V1 Bear](results/Inference/V1_brown_bear.png) | ![V2 Bear](results/Inference/V2_brown_bear.png) | ![V3 Bear](results/Inference/V3_brown_bear.png) |
-| *"A brown bear walking across a rocky field."* | *"A large brown bear walking on top of rocks next to a stream."* | *"A brown bear walking through a rocky landscape near a body of water."* |
+| *"A brown bear standing next to a tree in a field."* | *"A brown bear standing in the grass."* | *"A large brown bear sitting on top of a grass covered field."* |
 
-- **Observation**: While V1 captures the broad scene, V2 and V3 successfully resolve fine-grained contextual details (the stream/water and specific rocky landscape), demonstrating the benefit of spatial patch queries.
+- **Observation**: While V1 captures the broad scene, V2 and V3 successfully resolve fine-grained contextual details (the grass field and the size of the bear), demonstrating the benefit of spatial patch queries.
 
 ---
 
@@ -173,9 +173,9 @@ To validate real-world performance, all three trained models were tested across 
 | Model V1 (Show & Tell) | Model V2 (Spatial Attention) | Model V3 (Transformer Decoder) |
 | :---: | :---: | :---: |
 | ![V1 Children](results/Inference/V1_group_of_children.png) | ![V2 Children](results/Inference/V2_group_of_children.png) | ![V3 Children](results/Inference/V3_group_of_children.png) |
-| *"A group of young children standing next to each other."* | *"A group of children sitting around a table with food."* | *"A group of children sitting together at a table during an event."* |
+| *"A group of people playing a game of soccer."* | *"A group of people standing in front of a group of people."* | *"A group of young children standing next to each other."* |
 
-- **Observation**: Model V1 defaults to a generic standing assumption. Models V2 and V3 accurately identify the children's posture (*sitting*), the interactive setting (*table*), and the activity context (*food/event*).
+- **Observation**: Model V1 is factually wrong. Models V2 gives a generic claim with wrong sentence structure and V3 accurately identify the young children and their posture (*standing*) and position (*close to each other*).
 
 ---
 
@@ -185,9 +185,9 @@ To validate real-world performance, all three trained models were tested across 
 | Model V1 (Show & Tell) | Model V2 (Spatial Attention) | Model V3 (Transformer Decoder) |
 | :---: | :---: | :---: |
 | ![V1 Girl](results/Inference/V1_little_girl.png) | ![V2 Girl](results/Inference/V2_little_girl.png) | ![V3 Girl](results/Inference/V3_little_girl.png) |
-| *"A little girl holding a pair of scissors."* | *"A young girl with glasses holding a pair of pink scissors cutting paper."* | *"A little girl wearing glasses focused on cutting paper with scissors."* |
+| *"A woman standing in front of a building with an umbrella."* | *"A little girl holding an umbrella in the rain."* | *"A little girl holding an umbrella in the rain."* |
 
-- **Observation**: Model V1 identifies the primary subject and object. Models V2 and V3 resolve sub-attribute visual details (e.g., *glasses*, *pink scissors*, and the interaction *cutting paper*).
+- **Observation**: Model V1 is partially correct. Models V2 and V3 resolve sub-attribute visual details (e.g., *little girl*, *umbrella*, the interaction *holding* and the environment context *rain*).
 
 ---
 
