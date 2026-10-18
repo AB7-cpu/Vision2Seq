@@ -22,7 +22,6 @@ data/vocabulary.pkl
 checkpoints/
 
 # Training outputs
-results/
 wandb/
 
 # Jupyter / IDE
